@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Planejador de Times</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="./css/1.css">
+</head>
+
+<body>
+
+    <!-- ondrop="drop(event)" ondragover="allowDrop(event) -->
+
+    <section id="sTop" class="indent-1">
+        <section id="sTop" class="s1">
+            <section id="sTop" class="left">
+                <div class="container">
+                    <div class="row">
+                        <div class="asas" id="p1" onclick="remove(this.id)">
+                        </div>
+                        <div class="asas" id="p2" onclick="remove(this.id)">
+                        </div>
+                        <div class="asas" id="p3" onclick="remove(this.id)">
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="asas" id="p4" onclick="remove(this.id)">
+                        </div>
+                        <div class="asas" id="p5" onclick="remove(this.id)">
+                        </div>
+                        <div class="asas" id="p6" onclick="remove(this.id)">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s2" id="treinador"> 
+                <img src="./images/trainers/Red.png"  height="550" width="auto">
+            </section>
+        </section>
+    </section>
+
+    <section class="s3">
+        <section id="sTop" class="s1">
+            <section id="sTop" class="left">
+                <div class="container">
+                    <div class="row" id="EscolhaPk">
+                        <div id="EscolhaPk">
+                            <div id="PkTr">
+                                <p>Escolha seu Pokémon:</p>
+                                <select name="" class="selectpicker" id="pkmEscolha" data-live-search="true"
+                                    onchange="pkm()">
+                                    <option selected value="0">...</option>
+                                    <!-- GEN 1 -->
+                                    <option value="001Bulbasaur" id="1gen">Bulbasaur</option>
+                                    <option value="004Charmander" id="1gen">Charmander</option>
+                                    <option value="007Squirtle" id="1gen">Squirtle</option>
+                                    <!-- GEN 2 -->
+                                    <option value="152Chikorita" id="2gen">Chikorita</option>
+                                    <option value="155Cyndaquil" id="2gen">Cyndaquil</option>
+                                    <option value="158Totodile" id="2gen">Totodile</option>
+                                    <!-- GEN 3 -->
+                                    <option value="252Treecko" id="3gen">Treecko</option>
+                                    <option value="255Torchic" id="3gen">Torchic</option>
+                                    <option value="258Mudkip" id="3gen">Mudkip</option>
+                                    <!-- GEN 4 -->
+                                    <option value="387Turtwig" id="4gen">Turtwig</option>
+                                    <option value="390Chimchar" id="4gen">Chimchar</option>
+                                    <option value="393Piplup" id="4gen">Piplup</option>
+                                    <!-- GEN 5 -->
+                                    <option value="495Snivy" id="5gen">Snivy</option>
+                                    <option value="498Tepig" id="5gen">Tepig</option>
+                                    <option value="501Oshawott" id="5gen">Oshawott</option>
+                                    <!-- GEN 6 -->
+                                    <option value="650Chespin" id="6gen">Chespin</option>
+                                    <option value="653Fennekin" id="6gen">Fennekin</option>
+                                    <option value="656Froakie" id="6gen">Froakie</option>
+                                    <!-- GEN 7 -->
+                                    <option value="722Rowlet" id="7gen">Rowlet</option>
+                                    <option value="725Litten" id="7gen">Litten</option>
+                                    <option value="728Popplio" id="7gen">Popplio</option>
+                                </select>
+                            </div>
+                            <div id="PkTr">
+                                <div class="w-100"></div>
+                                <p>Escolha seu Treinador:</p>
+                                <div class="w-100"></div>
+                                <select name="" class="selectpicker" id="treEscolha" data-live-search="true"
+                                    onchange="tre()">
+                                    <!-- GEN 1 -->
+                                    <option selected value="Red" id="1gen">Red</option>
+                                    <option value="Leaf" id="1gen">Leaf</option>
+                                    <!-- GEN 2 -->
+                                    <option value="Ethan" id="2gen">Ethan</option>
+                                    <option value="Lyra" id="2gen">Lyra</option>
+                                    <!-- GEN 3 -->
+                                    <option value="Brendan" id="3gen">Brendan</option>
+                                    <option value="May" id="3gen">May</option>
+                                    <!-- GEN 4 -->
+                                    <option value="Lucas" id="4gen">Lucas</option>
+                                    <option value="Dawn" id="4gen">Dawn</option>
+                                    <option value="LucasP" id="4gen">Lucas P</option>
+                                    <option value="DawnP" id="4gen">Dawn P</option>
+                                    <!-- GEN 5 -->
+                                    <option value="Hilbert" id="5gen">Hilbert</option>
+                                    <option value="Hilda" id="5gen">Hilda</option>
+                                    <option value="Nate" id="5gen">Nate</option>
+                                    <option value="Rosa" id="5gen">Rosa</option>
+                                    <!-- GEN 6 -->
+                                    <option value="Calem" id="6gen">Calem</option>
+                                    <option value="Serena" id="6gen">Serena</option>
+                                    <!-- GEN 7 -->
+                                    <option value="Elio" id="7gen">Elio</option>
+                                    <option value="Selene" id="7gen">Selene</option>
+                                    <option value="ElioU" id="7gen">Elio U</option>
+                                    <option value="SeleneU" id="7gen">Selene U</option>
+                                    <!-- GEN 8 -->
+                                    <option value="Victor" id="8gen">Victor</option>
+                                    <option value="Gloria" id="8gen">Gloria</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    Ao terminar, clique em pronto<br>
+                    <input type="button" value="Pronto" onclick="pronto()">
+
+            </section>
+
+            <script src="js/1.js"></script>
+            <script src="js/jquery-3.3.1.slim.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/bootstrap-select.min.js"></script>
+</body>
+
+</html>
