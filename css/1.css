@@ -59,6 +59,8 @@ section.s3 {
 
 .indent-1{
     background-image: url("../images/site/wallpaper.jpg");
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
 }
 
 span{
