@@ -1,0 +1,31 @@
+        <select name="" class="selectpicker" id="pkmEscolha" data-live-search="true" onchange="pkm()">
+            <option selected value="0">...</option>
+            <!-- GEN 1 -->
+            <option value="001Bulbasaur" id="1gen">Bulbasaur</option>
+            <option value="004Charmander" id="1gen">Charmander</option>
+            <option value="007Squirtle" id="1gen">Squirtle</option>
+            <!-- GEN 2 -->
+            <option value="152Chikorita" id="2gen">Chikorita</option>
+            <option value="155Cyndaquil" id="2gen">Cyndaquil</option>
+            <option value="158Totodile" id="2gen">Totodile</option>
+            <!-- GEN 3 -->
+            <option value="252Treecko" id="3gen">Treecko</option>
+            <option value="255Torchic" id="3gen">Torchic</option>
+            <option value="258Mudkip" id="3gen">Mudkip</option>
+            <!-- GEN 4 -->
+            <option value="387Turtwig" id="4gen">Turtwig</option>
+            <option value="390Chimchar" id="4gen">Chimchar</option>
+            <option value="393Piplup" id="4gen">Piplup</option>
+            <!-- GEN 5 -->
+            <option value="495Snivy" id="5gen">Snivy</option>
+            <option value="498Tepig" id="5gen">Tepig</option>
+            <option value="501Oshawott" id="5gen">Oshawott</option>
+            <!-- GEN 6 -->
+            <option value="650Chespin" id="6gen">Chespin</option>
+            <option value="653Fennekin" id="6gen">Fennekin</option>
+            <option value="656Froakie" id="6gen">Froakie</option>
+            <!-- GEN 7 -->
+            <option value="722Rowlet" id="7gen">Rowlet</option>
+            <option value="725Litten" id="7gen">Litten</option>
+            <option value="728Popplio" id="7gen">Popplio</option>
+        </select>
