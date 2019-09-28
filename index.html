@@ -5,7 +5,7 @@
     <title>Pokémon Team</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="./css/bootstrap-select.min.css"> -->
+    <link rel="stylesheet" href="./css/bootstrap-select.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css"> -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script> -->
@@ -47,15 +47,59 @@
         <section id="sTop" class="s1">
             <section id="sTop" class="left">
                 <div class="container">
+                    <div id="PkTr">
+                        <div class="w-100"></div>
+                        <p>Escolha seu Treinador:</p>
+                        <div class="w-100"></div>
+                        <select name="" class="selectpicker" id="treEscolha" data-live-search="true" onchange="tre()">
+                            <!-- GEN 1 -->
+                            <option selected value="Red" id="1gen">Red</option>
+                            <option value="Leaf" id="1gen">Leaf</option>
+                            <!-- GEN 2 -->
+                            <option value="Ethan" id="2gen">Ethan</option>
+                            <option value="Lyra" id="2gen">Lyra</option>
+                            <!-- GEN 3 -->
+                            <option value="Brendan" id="3gen">Brendan</option>
+                            <option value="May" id="3gen">May</option>
+                            <!-- GEN 4 -->
+                            <option value="Lucas" id="4gen">Lucas</option>
+                            <option value="Dawn" id="4gen">Dawn</option>
+                            <option value="LucasP" id="4gen">Lucas P</option>
+                            <option value="DawnP" id="4gen">Dawn P</option>
+                            <!-- GEN 5 -->
+                            <option value="Hilbert" id="5gen">Hilbert</option>
+                            <option value="Hilda" id="5gen">Hilda</option>
+                            <option value="Nate" id="5gen">Nate</option>
+                            <option value="Rosa" id="5gen">Rosa</option>
+                            <!-- GEN 6 -->
+                            <option value="Calem" id="6gen">Calem</option>
+                            <option value="Serena" id="6gen">Serena</option>
+                            <!-- GEN 7 -->
+                            <option value="Elio" id="7gen">Elio</option>
+                            <option value="Selene" id="7gen">Selene</option>
+                            <option value="ElioU" id="7gen">Elio U</option>
+                            <option value="SeleneU" id="7gen">Selene U</option>
+                            <!-- GEN 8 -->
+                            <option value="Victor" id="8gen">Victor</option>
+                            <option value="Gloria" id="8gen">Gloria</option>
+                        </select><br><br>
+                    </div>
                     <main class="GridEscolha">
                         Filtre os Pokémon que você deseja escolher<br><br>
-                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen1">1ª Geração</label>
-                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen2">2ª Geração</label>
-                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen3">3ª Geração</label>
-                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen4">4ª Geração</label>
-                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen5">5ª Geração</label>
-                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen6">6ª Geração</label>
-                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen7">7ª Geração</label>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen1">1ª
+                            Geração</label>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen2">2ª
+                            Geração</label>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen3">3ª
+                            Geração</label>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen4">4ª
+                            Geração</label>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen5">5ª
+                            Geração</label>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen6">6ª
+                            Geração</label>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen7">7ª
+                            Geração</label>
                         <br><br>
                         <h2>1ª Geração</h2>
                         <div class="row gen1" id="EscolhaPk">
@@ -185,10 +229,11 @@
                         </div>
                     </main>
                 </div>
-                <!-- Ao terminar, clique em pronto<br>
-                    <input type="button" value="Pronto" class="btn btn-light" onclick="pronto()"> -->
             </section>
         </section>
+
+        Ao terminar, clique em pronto<br><br>
+        <input type="button" value="Pronto" class="btn btn-light" onclick="pronto()">
     </section>
 
     <script src="js/index.js"></script>
