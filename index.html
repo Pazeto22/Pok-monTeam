@@ -3,9 +3,12 @@
 
 <head>
     <title>Pokémon Team</title>
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="./css/1.css">
+    <!-- <link rel="stylesheet" href="./css/bootstrap-select.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css"> -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script> -->
 </head>
 
 <body>
@@ -34,8 +37,8 @@
                 </div>
             </section>
 
-            <section class="s2" id="treinador"> 
-                <img src="./images/trainers/Red.png"  height="550" width="auto">
+            <section class="s2" id="treinador">
+                <img src="./images/trainers/Red.png" height="550" width="auto">
             </section>
         </section>
     </section>
@@ -44,93 +47,155 @@
         <section id="sTop" class="s1">
             <section id="sTop" class="left">
                 <div class="container">
-                    <div class="row" id="EscolhaPk">
-                        <div id="EscolhaPk">
-                            <div id="PkTr">
-                                <p>Escolha seu Pokémon:</p>
-                                <select name="" class="selectpicker" id="pkmEscolha" data-live-search="true"
-                                    onchange="pkm()">
-                                    <option selected value="0">...</option>
-                                    <!-- GEN 1 -->
-                                    <option value="001Bulbasaur" id="1gen">Bulbasaur</option>
-                                    <option value="004Charmander" id="1gen">Charmander</option>
-                                    <option value="007Squirtle" id="1gen">Squirtle</option>
-                                    <!-- GEN 2 -->
-                                    <option value="152Chikorita" id="2gen">Chikorita</option>
-                                    <option value="155Cyndaquil" id="2gen">Cyndaquil</option>
-                                    <option value="158Totodile" id="2gen">Totodile</option>
-                                    <!-- GEN 3 -->
-                                    <option value="252Treecko" id="3gen">Treecko</option>
-                                    <option value="255Torchic" id="3gen">Torchic</option>
-                                    <option value="258Mudkip" id="3gen">Mudkip</option>
-                                    <!-- GEN 4 -->
-                                    <option value="387Turtwig" id="4gen">Turtwig</option>
-                                    <option value="390Chimchar" id="4gen">Chimchar</option>
-                                    <option value="393Piplup" id="4gen">Piplup</option>
-                                    <!-- GEN 5 -->
-                                    <option value="495Snivy" id="5gen">Snivy</option>
-                                    <option value="498Tepig" id="5gen">Tepig</option>
-                                    <option value="501Oshawott" id="5gen">Oshawott</option>
-                                    <!-- GEN 6 -->
-                                    <option value="650Chespin" id="6gen">Chespin</option>
-                                    <option value="653Fennekin" id="6gen">Fennekin</option>
-                                    <option value="656Froakie" id="6gen">Froakie</option>
-                                    <!-- GEN 7 -->
-                                    <option value="722Rowlet" id="7gen">Rowlet</option>
-                                    <option value="725Litten" id="7gen">Litten</option>
-                                    <option value="728Popplio" id="7gen">Popplio</option>
-                                </select>
-                            </div>
-                            <div id="PkTr">
-                                <div class="w-100"></div>
-                                <p>Escolha seu Treinador:</p>
-                                <div class="w-100"></div>
-                                <select name="" class="selectpicker" id="treEscolha" data-live-search="true"
-                                    onchange="tre()">
-                                    <!-- GEN 1 -->
-                                    <option selected value="Red" id="1gen">Red</option>
-                                    <option value="Leaf" id="1gen">Leaf</option>
-                                    <!-- GEN 2 -->
-                                    <option value="Ethan" id="2gen">Ethan</option>
-                                    <option value="Lyra" id="2gen">Lyra</option>
-                                    <!-- GEN 3 -->
-                                    <option value="Brendan" id="3gen">Brendan</option>
-                                    <option value="May" id="3gen">May</option>
-                                    <!-- GEN 4 -->
-                                    <option value="Lucas" id="4gen">Lucas</option>
-                                    <option value="Dawn" id="4gen">Dawn</option>
-                                    <option value="LucasP" id="4gen">Lucas P</option>
-                                    <option value="DawnP" id="4gen">Dawn P</option>
-                                    <!-- GEN 5 -->
-                                    <option value="Hilbert" id="5gen">Hilbert</option>
-                                    <option value="Hilda" id="5gen">Hilda</option>
-                                    <option value="Nate" id="5gen">Nate</option>
-                                    <option value="Rosa" id="5gen">Rosa</option>
-                                    <!-- GEN 6 -->
-                                    <option value="Calem" id="6gen">Calem</option>
-                                    <option value="Serena" id="6gen">Serena</option>
-                                    <!-- GEN 7 -->
-                                    <option value="Elio" id="7gen">Elio</option>
-                                    <option value="Selene" id="7gen">Selene</option>
-                                    <option value="ElioU" id="7gen">Elio U</option>
-                                    <option value="SeleneU" id="7gen">Selene U</option>
-                                    <!-- GEN 8 -->
-                                    <option value="Victor" id="8gen">Victor</option>
-                                    <option value="Gloria" id="8gen">Gloria</option>
-                                </select>
-                            </div>
+                    <main class="GridEscolha">
+                        Filtre os Pokémon que você deseja escolher<br><br>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen1">1ª Geração</label>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen2">2ª Geração</label>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen3">3ª Geração</label>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen4">4ª Geração</label>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen5">5ª Geração</label>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen6">6ª Geração</label>
+                        <label><input type="checkbox" id="filtroPkm" checked onclick="filtro()" value="gen7">7ª Geração</label>
+                        <br><br>
+                        <h2>1ª Geração</h2>
+                        <div class="row gen1" id="EscolhaPk">
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/bulbasaur.png" id="pkmEscolha"
+                                    value="001Bulbasaur" onclick="pkm(this)"><br>
+                                Bulbasaur
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/charmander.png" id="pkmEscolha"
+                                    value="004Charmander" onclick="pkm(this)"><br>
+                                Charmander
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/squirtle.png" id="pkmEscolha"
+                                    value="007Squirtle" onclick="pkm(this)"><br>
+                                Squirtle
+                            </a>
                         </div>
-                    </div>
-                    Ao terminar, clique em pronto<br>
-                    <input type="button" value="Pronto" class="btn btn-light" onclick="pronto()">
-
+                        <h2>2ª Geração</h2>
+                        <div class="row gen2" id="EscolhaPk">
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/chikorita.png" id="pkmEscolha"
+                                    value="152Chikorita" onclick="pkm(this)"><br>
+                                Chikorita
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/cyndaquil.png" id="pkmEscolha"
+                                    value="155Cyndaquil" onclick="pkm(this)"><br>
+                                Cyndaquil
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/totodile.png" id="pkmEscolha"
+                                    value="158Totodile" onclick="pkm(this)"><br>
+                                Totodile
+                            </a>
+                        </div>
+                        <h2>3ª Geração</h2>
+                        <div class="row gen3" id="EscolhaPk">
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/treecko.png" id="pkmEscolha"
+                                    value="252Treecko" onclick="pkm(this)"><br>
+                                Treecko
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/torchic.png" id="pkmEscolha"
+                                    value="255Torchic" onclick="pkm(this)"><br>
+                                Torchic
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/mudkip.png" id="pkmEscolha" value="258Mudkip"
+                                    onclick="pkm(this)"><br>
+                                Mudkip
+                            </a>
+                        </div>
+                        <h2>4ª Geração</h2>
+                        <div class="row gen4" id="EscolhaPk">
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/turtwig.png" id="pkmEscolha"
+                                    value="387Turtwig" onclick="pkm(this)"><br>
+                                Turtwig
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/chimchar.png" id="pkmEscolha"
+                                    value="390Chimchar" onclick="pkm(this)"><br>
+                                Chimchar
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/piplup.png" id="pkmEscolha" value="393Piplup"
+                                    onclick="pkm(this)"><br>
+                                Piplup
+                            </a>
+                        </div>
+                        <h2>5ª Geração</h2>
+                        <div class="row gen5" id="EscolhaPk">
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/snivy.png" id="pkmEscolha" value="495Snivy"
+                                    onclick="pkm(this)"><br>
+                                Snivy
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/tepig.png" id="pkmEscolha" value="498Tepig"
+                                    onclick="pkm(this)"><br>
+                                Tepig
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/oshawott.png" id="pkmEscolha"
+                                    value="501Oshawott" onclick="pkm(this)"><br>
+                                Oshawott
+                            </a>
+                        </div>
+                        <h2>6ª Geração</h2>
+                        <div class="row gen6" id="EscolhaPk">
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/chespin.png" id="pkmEscolha"
+                                    value="650Chespin" onclick="pkm(this)"><br>
+                                Chespin
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/fennekin.png" id="pkmEscolha"
+                                    value="653Fennekin" onclick="pkm(this)"><br>
+                                Fennekin
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/froakie.png" id="pkmEscolha"
+                                    value="656Froakie" onclick="pkm(this)"><br>
+                                Froakie
+                            </a>
+                        </div>
+                        <h2>7ª Geração</h2>
+                        <div class="row gen7" id="EscolhaPk">
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/rowlet.png" id="pkmEscolha" value="722Rowlet"
+                                    onclick="pkm(this)"><br>
+                                Rowlet
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/litten.png" id="pkmEscolha" value="725Litten"
+                                    onclick="pkm(this)"><br>
+                                Litten
+                            </a>
+                            <a class="gridpkm">
+                                <input type="image" src="./images/pkmMini/popplio.png" id="pkmEscolha"
+                                    value="728Popplio" onclick="pkm(this)"><br>
+                                Popplio
+                            </a>
+                        </div>
+                    </main>
+                </div>
+                <!-- Ao terminar, clique em pronto<br>
+                    <input type="button" value="Pronto" class="btn btn-light" onclick="pronto()"> -->
             </section>
+        </section>
+    </section>
 
-            <script src="js/1.js"></script>
-            <script src="js/jquery-3.3.1.slim.min.js"></script>
-            <script src="js/popper.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
 </body>
 
 </html>
