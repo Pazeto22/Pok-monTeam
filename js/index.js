@@ -58,7 +58,7 @@ function pkm(Pokemon) {
   } else if (pkm[5].innerHTML.indexOf("img") == -1) {
     return pkm[5].innerHTML = `<img class="${pkmSize}" src="./images/pkm/${pkmE}.png" height="auto"; width="${size}"; id="pok";>`
   } else {
-    return alert("Equipe cheia")
+    return false
   }
 }
 
