@@ -53,10 +53,8 @@ function remove(r1) {
 }
 
 function pronto() {
-  body = document.body
-  document.body.scrollTop = 0; // Safari
-  document.documentElement.scrollTop = 0;
-  body.style.overflow = "hidden"
+  sumiu = document.getElementsByClassName("s3")[0]
+  sumiu.parentNode.removeChild(sumiu)
 }
 
 function filtro(filtro, gen1, gen2, gen3, gen4, gen5, gen6, gen7) {

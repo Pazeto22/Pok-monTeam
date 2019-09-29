@@ -7,9 +7,6 @@ body{
     background-position: center;
     font-family: Arial, Helvetica, sans-serif;
     color: azure;
-    background-image: url("../images/site/wallpaperBody.jpg");
-    background-size: 100% !important;
-    background-repeat: no-repeat !important;
 }
 
 .asas {
@@ -59,6 +56,14 @@ section.s3 {
     text-align: center;
     color: black;
     text-align: center;
+}
+
+html{
+    background-image: url("../images/site/wallpaperBody.jpg");
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .indent-1{
