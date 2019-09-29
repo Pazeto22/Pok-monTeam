@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap-select.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css"> -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script> -->
+    <script src="./js/html2canvas.js"></script>
+    <!-- <script src="./js/html2canvas.min.js"></script> -->
 </head>
 
 <body>
@@ -38,7 +38,7 @@
             </section>
 
             <section class="s2" id="treinador">
-                <img src="./images/trainers/Red.png" height="550" width="auto">
+                <!-- <img src="./images/trainers/Red.png" height="550" width="auto"> -->
             </section>
         </section>
     </section>
@@ -52,8 +52,9 @@
                         <p>Escolha seu Treinador:</p>
                         <div class="w-100"></div>
                         <select name="" class="selectpicker" id="treEscolha" data-live-search="true" onchange="tre()">
+                            <option selected disabled>...</option>
                             <!-- GEN 1 -->
-                            <option selected value="Red" id="1gen">Red</option>
+                            <option value="Red" id="1gen">Red</option>
                             <option value="Leaf" id="1gen">Leaf</option>
                             <!-- GEN 2 -->
                             <option value="Ethan" id="2gen">Ethan</option>
@@ -493,7 +494,7 @@
         </section>
 
         Ao terminar, clique em pronto<br><br>
-        <input type="button" value="Pronto" class="btn btn-light" onclick="pronto()">
+        <input type="button" value="Pronto" id="download" class="btn btn-light" onclick="pronto()">
     </section>
 
     <script src="js/index.js"></script>
