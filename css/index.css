@@ -16,11 +16,12 @@ body{
     width: 250px !important;
     height: 250px !important;
     background-image: url("../images/site/pkmback.png");
-    margin: 5pt;
-    text-align: center;
-    padding: 7px;
-    justify-content: center;
-    align-items: center;
+    background-repeat: no-repeat;
+    margin: 15pt;
+    /* text-align: center; */
+    /* padding: 70px; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 section.left {
@@ -28,7 +29,7 @@ section.left {
 }
 
 .row{
-    width: 800px !important;
+    width: 900px !important;
 }
 
 html,
@@ -88,14 +89,45 @@ div#PkTr{
 img#pok{
     cursor: pointer;
     cursor: url("../images/site/cursorRemove.png"), pointer, auto;
+    /* min-width:100%;
+    min-height:100%; */
 }
 
-img#Epok{
-    cursor: pointer;
+img.small{
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+    top: +10%;
+}
+
+img.medium{
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+}
+
+img.abig{
+    max-height: 300px;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+    top: -6%;
+}
+
+img.big{
+    max-height: 300px;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+    top: -10%;
 }
 
 a.gridpkm{
-    margin: 10px;
+    margin: 5px;
 }
 
 input{
@@ -111,4 +143,18 @@ h2{
 label{
     margin-left: 5px;
     margin-right: 5px;
+}
+
+p{
+    text-align: left;
+    height: auto;
+    width: 95%;
+    font-weight: bold;
+}
+
+div#gridEPK{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
