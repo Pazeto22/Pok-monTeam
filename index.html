@@ -65,8 +65,8 @@
                             <!-- GEN 4 -->
                             <option value="Lucas" id="4gen">Lucas</option>
                             <option value="Dawn" id="4gen">Dawn</option>
-                            <option value="LucasP" id="4gen">Lucas P</option>
-                            <option value="DawnP" id="4gen">Dawn P</option>
+                            <option value="LucasP" id="4gen">Lucas Platinum</olatinumtion>
+                            <option value="DawnP" id="4gen">Dawn Platinum</option>
                             <!-- GEN 5 -->
                             <option value="Hilbert" id="5gen">Hilbert</option>
                             <option value="Hilda" id="5gen">Hilda</option>
@@ -78,36 +78,49 @@
                             <!-- GEN 7 -->
                             <option value="Elio" id="7gen">Elio</option>
                             <option value="Selene" id="7gen">Selene</option>
-                            <option value="ElioU" id="7gen">Elio U</option>
-                            <option value="SeleneU" id="7gen">Selene U</option>
+                            <option value="ElioU" id="7gen">Elio Ultra</option>
+                            <option value="SeleneU" id="7gen">Selene Ultra</option>
                             <!-- GEN 8 -->
                             <option value="Victor" id="8gen">Victor</option>
+                            <option value="VictorG" id="8gen">Victor Ginásio</option>
                             <option value="Gloria" id="8gen">Gloria</option>
+                            <option value="GloriaG" id="8gen">Gloria Ginásio</option>
                         </select><br><br>
                     </div>
                     <main class="GridEscolha">
                         <div class="filtragem">
                             Filtre os Pokémon que você deseja escolher<br><br>
                             <label><input type="checkbox" id="filtroPkm" checked
-                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7)" value="gen1"> 1ª
+                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7, gen8)" value="gen1">
+                                1ª
                                 Geração</label>
                             <label><input type="checkbox" id="filtroPkm" checked
-                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7)" value="gen2"> 2ª
+                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7, gen8)" value="gen2">
+                                2ª
                                 Geração</label>
                             <label><input type="checkbox" id="filtroPkm" checked
-                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7)" value="gen3"> 3ª
+                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7, gen8)" value="gen3">
+                                3ª
                                 Geração</label>
                             <label><input type="checkbox" id="filtroPkm" checked
-                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7)" value="gen4"> 4ª
+                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7, gen8)" value="gen4">
+                                4ª
                                 Geração</label><br>
                             <label><input type="checkbox" id="filtroPkm" checked
-                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7)" value="gen5"> 5ª
+                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7, gen8)" value="gen5">
+                                5ª
                                 Geração</label>
                             <label><input type="checkbox" id="filtroPkm" checked
-                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7)" value="gen6"> 6ª
+                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7, gen8)" value="gen6">
+                                6ª
                                 Geração</label>
                             <label><input type="checkbox" id="filtroPkm" checked
-                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7)" value="gen7"> 7ª
+                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7, gen8)" value="gen7">
+                                7ª
+                                Geração</label>
+                            <label><input type="checkbox" id="filtroPkm" checked
+                                    onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7, gen8)" value="gen8">
+                                8ª
                                 Geração</label>
                             <br><br>
                         </div>
@@ -164,6 +177,31 @@
                                         onclick="pkm(this)"><br>
                                     Blastoise
                                 </a>
+                                <a class="gridpkm pikachu eletric eletric form2">
+                                    <input type="image" src="./images/pkmMini/pikachu.png" id="pkmEscolha"
+                                        value="025Pikachu" class="eletric eletric form2 medium" onclick="pkm(this)"><br>
+                                    Pikachu
+                                </a>
+                                <a class="gridpkm raichu eletric eletric fullform">
+                                    <input type="image" src="./images/pkmMini/raichu.png" id="pkmEscolha"
+                                        value="026Raichu" class="eletric eletric fullform abig" onclick="pkm(this)"><br>
+                                    Raichu
+                                </a>
+                                <a class="gridpkm growlithe fire fire form1">
+                                    <input type="image" src="./images/pkmMini/growlithe.png" id="pkmEscolha"
+                                        value="058Growlithe" class="fire fire form1 small" onclick="pkm(this)"><br>
+                                    Growlithe
+                                </a>
+                                <a class="gridpkm arcanine fire fire fullform">
+                                    <input type="image" src="./images/pkmMini/arcanine.png" id="pkmEscolha"
+                                        value="059Arcanine" class="fire fire fullform big" onclick="pkm(this)"><br>
+                                    Arcanine
+                                </a>
+                                <a class="gridpkm scyther bug flying form1">
+                                    <input type="image" src="./images/pkmMini/scyther.png" id="pkmEscolha"
+                                        value="123Scyther" class="bug flying form1 abig" onclick="pkm(this)"><br>
+                                    Scyther
+                                </a>
                             </div>
 
                             <!-- SEGUNDA GERAÇÃO -->
@@ -217,6 +255,17 @@
                                         value="160Feraligatr" class="water water fullform big" onclick="pkm(this)"><br>
                                     Feraligatr
                                 </a>
+                                <a class="gridpkm scizor water water form1">
+                                    <input type="image" src="./images/pkmMini/scizor.png" id="pkmEscolha"
+                                        value="212Scizor" class="bug steel fullform abig" onclick="pkm(this)"><br>
+                                    Scizor
+                                </a>
+                                <a class="gridpkm heracross water water form1">
+                                    <input type="image" src="./images/pkmMini/heracross.png" id="pkmEscolha"
+                                        value="214Heracross" class="bug fighting fullform medium"
+                                        onclick="pkm(this)"><br>
+                                    Heracross
+                                </a>
                             </div>
 
                             <!-- TERCEIRA GERAÇÃO -->
@@ -225,51 +274,51 @@
                             <p>3ª Geração</p>
                             <div class="w-100"></div>
                             <div class="row gen3" id="gridEPK">
-                            <a class="gridpkm treecko grass grass form1">
-                                <input type="image" src="./images/pkmMini/treecko.png" id="pkmEscolha"
-                                    value="252Treecko" class="grass grass form1 small" onclick="pkm(this)"><br>
-                                Treecko
-                            </a>
-                            <a class="gridpkm grovyle grass grass form2">
-                                <input type="image" src="./images/pkmMini/grovyle.png" id="pkmEscolha"
-                                    value="253Grovyle" class="grass grass form2 medium" onclick="pkm(this)"><br>
-                                Grovyle
-                            </a>
-                            <a class="gridpkm sceptile grass grass form1">
-                                <input type="image" src="./images/pkmMini/sceptile.png" id="pkmEscolha"
-                                    value="254Sceptile" class="grass grass fullform abig" onclick="pkm(this)"><br>
-                                Sceptile
-                            </a>
-                            <a class="gridpkm torchic fire fire form1">
-                                <input type="image" src="./images/pkmMini/torchic.png" id="pkmEscolha"
-                                    value="255Torchic" class="fire fire form1 small" onclick="pkm(this)"><br>
-                                Torchic
-                            </a>
-                            <a class="gridpkm combusken fire fighting form2">
-                                <input type="image" src="./images/pkmMini/combusken.png" id="pkmEscolha"
-                                    value="256Combusken" class="fire fighting form2 medium" onclick="pkm(this)"><br>
-                                Combusken
-                            </a>
-                            <a class="gridpkm blaziken fire fighting fullform">
-                                <input type="image" src="./images/pkmMini/blaziken.png" id="pkmEscolha"
-                                    value="257Blaziken" class="fire fighting fullform abig" onclick="pkm(this)"><br>
-                                Blaziken
-                            </a>
-                            <a class="gridpkm mudkip water water form1">
-                                <input type="image" src="./images/pkmMini/mudkip.png" id="pkmEscolha" value="258Mudkip"
-                                    class="water water form1 small" onclick="pkm(this)"><br>
-                                Mudkip
-                            </a>
-                            <a class="gridpkm marshtomp water ground form2">
-                                <input type="image" src="./images/pkmMini/marshtomp.png" id="pkmEscolha"
-                                    value="259Marshtomp" class="water ground form2 medium" onclick="pkm(this)"><br>
-                                Marshtomp
-                            </a>
-                            <a class="gridpkm swampert water ground fullform">
-                                <input type="image" src="./images/pkmMini/swampert.png" id="pkmEscolha"
-                                    value="260Swampert" class="water ground fullform big" onclick="pkm(this)"><br>
-                                Swampert
-                            </a>
+                                <a class="gridpkm treecko grass grass form1">
+                                    <input type="image" src="./images/pkmMini/treecko.png" id="pkmEscolha"
+                                        value="252Treecko" class="grass grass form1 small" onclick="pkm(this)"><br>
+                                    Treecko
+                                </a>
+                                <a class="gridpkm grovyle grass grass form2">
+                                    <input type="image" src="./images/pkmMini/grovyle.png" id="pkmEscolha"
+                                        value="253Grovyle" class="grass grass form2 medium" onclick="pkm(this)"><br>
+                                    Grovyle
+                                </a>
+                                <a class="gridpkm sceptile grass grass form1">
+                                    <input type="image" src="./images/pkmMini/sceptile.png" id="pkmEscolha"
+                                        value="254Sceptile" class="grass grass fullform abig" onclick="pkm(this)"><br>
+                                    Sceptile
+                                </a>
+                                <a class="gridpkm torchic fire fire form1">
+                                    <input type="image" src="./images/pkmMini/torchic.png" id="pkmEscolha"
+                                        value="255Torchic" class="fire fire form1 small" onclick="pkm(this)"><br>
+                                    Torchic
+                                </a>
+                                <a class="gridpkm combusken fire fighting form2">
+                                    <input type="image" src="./images/pkmMini/combusken.png" id="pkmEscolha"
+                                        value="256Combusken" class="fire fighting form2 medium" onclick="pkm(this)"><br>
+                                    Combusken
+                                </a>
+                                <a class="gridpkm blaziken fire fighting fullform">
+                                    <input type="image" src="./images/pkmMini/blaziken.png" id="pkmEscolha"
+                                        value="257Blaziken" class="fire fighting fullform abig" onclick="pkm(this)"><br>
+                                    Blaziken
+                                </a>
+                                <a class="gridpkm mudkip water water form1">
+                                    <input type="image" src="./images/pkmMini/mudkip.png" id="pkmEscolha"
+                                        value="258Mudkip" class="water water form1 small" onclick="pkm(this)"><br>
+                                    Mudkip
+                                </a>
+                                <a class="gridpkm marshtomp water ground form2">
+                                    <input type="image" src="./images/pkmMini/marshtomp.png" id="pkmEscolha"
+                                        value="259Marshtomp" class="water ground form2 medium" onclick="pkm(this)"><br>
+                                    Marshtomp
+                                </a>
+                                <a class="gridpkm swampert water ground fullform">
+                                    <input type="image" src="./images/pkmMini/swampert.png" id="pkmEscolha"
+                                        value="260Swampert" class="water ground fullform big" onclick="pkm(this)"><br>
+                                    Swampert
+                                </a>
                             </div>
 
                             <!-- QUARTA GERAÇÃO -->
@@ -278,51 +327,52 @@
                             <p>4ª Geração</p>
                             <div class="w-100"></div>
                             <div class="row gen4" id="gridEPK">
-                            <a class="gridpkm turtwig grass grass form1">
-                                <input type="image" src="./images/pkmMini/turtwig.png" id="pkmEscolha"
-                                    value="387Turtwig" class="grass grass form1 small" onclick="pkm(this)"><br>
-                                Turtwig
-                            </a>
-                            <a class="gridpkm grotle grass grass form2">
-                                <input type="image" src="./images/pkmMini/grotle.png" id="pkmEscolha" value="388Grotle"
-                                    class="grass grass form2 medium" onclick="pkm(this)"><br>
-                                Grotle
-                            </a>
-                            <a class="gridpkm torterra grass ground fullform">
-                                <input type="image" src="./images/pkmMini/torterra.png" id="pkmEscolha"
-                                    value="389Torterra" class="grass ground fullform abig" onclick="pkm(this)"><br>
-                                Torterra
-                            </a>
-                            <a class="gridpkm chimchar fire fire form1">
-                                <input type="image" src="./images/pkmMini/chimchar.png" id="pkmEscolha"
-                                    value="390Chimchar" class="fire fire form1 small" onclick="pkm(this)"><br>
-                                Chimchar
-                            </a>
-                            <a class="gridpkm monferno fire fighting form2">
-                                <input type="image" src="./images/pkmMini/monferno.png" id="pkmEscolha"
-                                    value="391Monferno" class="fire fighting form2 medium" onclick="pkm(this)"><br>
-                                Monferno
-                            </a>
-                            <a class="gridpkm infernape fire fighting fullform">
-                                <input type="image" src="./images/pkmMini/infernape.png" id="pkmEscolha"
-                                    value="392Infernape" class="fire fighting fullform abig" onclick="pkm(this)"><br>
-                                Infernape
-                            </a>
-                            <a class="gridpkm piplup water water form1">
-                                <input type="image" src="./images/pkmMini/piplup.png" id="pkmEscolha" value="393Piplup"
-                                    class="water water form1 small" onclick="pkm(this)"><br>
-                                Piplup
-                            </a>
-                            <a class="gridpkm prinplup water water form2">
-                                <input type="image" src="./images/pkmMini/prinplup.png" id="pkmEscolha"
-                                    value="394Prinplup" class="water water form2 medium" onclick="pkm(this)"><br>
-                                Prinplup
-                            </a>
-                            <a class="gridpkm empoleon water steel fullform">
-                                <input type="image" src="./images/pkmMini/empoleon.png" id="pkmEscolha"
-                                    value="395Empoleon" class="water steel fullform big" onclick="pkm(this)"><br>
-                                Empoleon
-                            </a>
+                                <a class="gridpkm turtwig grass grass form1">
+                                    <input type="image" src="./images/pkmMini/turtwig.png" id="pkmEscolha"
+                                        value="387Turtwig" class="grass grass form1 small" onclick="pkm(this)"><br>
+                                    Turtwig
+                                </a>
+                                <a class="gridpkm grotle grass grass form2">
+                                    <input type="image" src="./images/pkmMini/grotle.png" id="pkmEscolha"
+                                        value="388Grotle" class="grass grass form2 medium" onclick="pkm(this)"><br>
+                                    Grotle
+                                </a>
+                                <a class="gridpkm torterra grass ground fullform">
+                                    <input type="image" src="./images/pkmMini/torterra.png" id="pkmEscolha"
+                                        value="389Torterra" class="grass ground fullform abig" onclick="pkm(this)"><br>
+                                    Torterra
+                                </a>
+                                <a class="gridpkm chimchar fire fire form1">
+                                    <input type="image" src="./images/pkmMini/chimchar.png" id="pkmEscolha"
+                                        value="390Chimchar" class="fire fire form1 small" onclick="pkm(this)"><br>
+                                    Chimchar
+                                </a>
+                                <a class="gridpkm monferno fire fighting form2">
+                                    <input type="image" src="./images/pkmMini/monferno.png" id="pkmEscolha"
+                                        value="391Monferno" class="fire fighting form2 medium" onclick="pkm(this)"><br>
+                                    Monferno
+                                </a>
+                                <a class="gridpkm infernape fire fighting fullform">
+                                    <input type="image" src="./images/pkmMini/infernape.png" id="pkmEscolha"
+                                        value="392Infernape" class="fire fighting fullform abig"
+                                        onclick="pkm(this)"><br>
+                                    Infernape
+                                </a>
+                                <a class="gridpkm piplup water water form1">
+                                    <input type="image" src="./images/pkmMini/piplup.png" id="pkmEscolha"
+                                        value="393Piplup" class="water water form1 small" onclick="pkm(this)"><br>
+                                    Piplup
+                                </a>
+                                <a class="gridpkm prinplup water water form2">
+                                    <input type="image" src="./images/pkmMini/prinplup.png" id="pkmEscolha"
+                                        value="394Prinplup" class="water water form2 medium" onclick="pkm(this)"><br>
+                                    Prinplup
+                                </a>
+                                <a class="gridpkm empoleon water steel fullform">
+                                    <input type="image" src="./images/pkmMini/empoleon.png" id="pkmEscolha"
+                                        value="395Empoleon" class="water steel fullform big" onclick="pkm(this)"><br>
+                                    Empoleon
+                                </a>
                             </div>
 
                             <!-- QUINTA GERAÇÃO -->
@@ -331,51 +381,51 @@
                             <p>5ª Geração</p>
                             <div class="w-100"></div>
                             <div class="row gen5" id="gridEPK">
-                            <a class="gridpkm snivy grass grass form1">
-                                <input type="image" src="./images/pkmMini/snivy.png" id="pkmEscolha" value="495Snivy"
-                                    class="grass grass form1 small" onclick="pkm(this)"><br>
-                                Snivy
-                            </a>
-                            <a class="gridpkm servine grass grass form2">
-                                <input type="image" src="./images/pkmMini/servine.png" id="pkmEscolha"
-                                    value="496Servine" class="grass grass form2 medium" onclick="pkm(this)"><br>
-                                Servine
-                            </a>
-                            <a class="gridpkm serperior grass grass fullform">
-                                <input type="image" src="./images/pkmMini/serperior.png" id="pkmEscolha"
-                                    value="497Serperior" class="grass grass fullform abig" onclick="pkm(this)"><br>
-                                Serperior
-                            </a>
-                            <a class="gridpkm tepig fire fire form1">
-                                <input type="image" src="./images/pkmMini/tepig.png" id="pkmEscolha" value="498Tepig"
-                                    class="fire fire form1 small" onclick="pkm(this)"><br>
-                                Tepig
-                            </a>
-                            <a class="gridpkm pignite fire fighting form2">
-                                <input type="image" src="./images/pkmMini/pignite.png" id="pkmEscolha"
-                                    value="499Pignite" class="fire fighting form2 medium" onclick="pkm(this)"><br>
-                                Pignite
-                            </a>
-                            <a class="gridpkm emboar fire fighting fullform">
-                                <input type="image" src="./images/pkmMini/emboar.png" id="pkmEscolha" value="500Emboar"
-                                    class="fire fighting fullform abig" onclick="pkm(this)"><br>
-                                Emboar
-                            </a>
-                            <a class="gridpkm oshawott water water form1">
-                                <input type="image" src="./images/pkmMini/oshawott.png" id="pkmEscolha"
-                                    value="501Oshawott" class="water water form1 small" onclick="pkm(this)"><br>
-                                Oshawott
-                            </a>
-                            <a class="gridpkm dewott water water form2">
-                                <input type="image" src="./images/pkmMini/dewott.png" id="pkmEscolha" value="502Dewott"
-                                    class="water water form2 medium" onclick="pkm(this)"><br>
-                                Dewott
-                            </a>
-                            <a class="gridpkm samurott water water fullform">
-                                <input type="image" src="./images/pkmMini/samurott.png" id="pkmEscolha"
-                                    value="503Samurott" class="water water fullform abig" onclick="pkm(this)"><br>
-                                Samurott
-                            </a>
+                                <a class="gridpkm snivy grass grass form1">
+                                    <input type="image" src="./images/pkmMini/snivy.png" id="pkmEscolha"
+                                        value="495Snivy" class="grass grass form1 small" onclick="pkm(this)"><br>
+                                    Snivy
+                                </a>
+                                <a class="gridpkm servine grass grass form2">
+                                    <input type="image" src="./images/pkmMini/servine.png" id="pkmEscolha"
+                                        value="496Servine" class="grass grass form2 medium" onclick="pkm(this)"><br>
+                                    Servine
+                                </a>
+                                <a class="gridpkm serperior grass grass fullform">
+                                    <input type="image" src="./images/pkmMini/serperior.png" id="pkmEscolha"
+                                        value="497Serperior" class="grass grass fullform abig" onclick="pkm(this)"><br>
+                                    Serperior
+                                </a>
+                                <a class="gridpkm tepig fire fire form1">
+                                    <input type="image" src="./images/pkmMini/tepig.png" id="pkmEscolha"
+                                        value="498Tepig" class="fire fire form1 small" onclick="pkm(this)"><br>
+                                    Tepig
+                                </a>
+                                <a class="gridpkm pignite fire fighting form2">
+                                    <input type="image" src="./images/pkmMini/pignite.png" id="pkmEscolha"
+                                        value="499Pignite" class="fire fighting form2 medium" onclick="pkm(this)"><br>
+                                    Pignite
+                                </a>
+                                <a class="gridpkm emboar fire fighting fullform">
+                                    <input type="image" src="./images/pkmMini/emboar.png" id="pkmEscolha"
+                                        value="500Emboar" class="fire fighting fullform abig" onclick="pkm(this)"><br>
+                                    Emboar
+                                </a>
+                                <a class="gridpkm oshawott water water form1">
+                                    <input type="image" src="./images/pkmMini/oshawott.png" id="pkmEscolha"
+                                        value="501Oshawott" class="water water form1 small" onclick="pkm(this)"><br>
+                                    Oshawott
+                                </a>
+                                <a class="gridpkm dewott water water form2">
+                                    <input type="image" src="./images/pkmMini/dewott.png" id="pkmEscolha"
+                                        value="502Dewott" class="water water form2 medium" onclick="pkm(this)"><br>
+                                    Dewott
+                                </a>
+                                <a class="gridpkm samurott water water fullform">
+                                    <input type="image" src="./images/pkmMini/samurott.png" id="pkmEscolha"
+                                        value="503Samurott" class="water water fullform abig" onclick="pkm(this)"><br>
+                                    Samurott
+                                </a>
                             </div>
 
                             <!-- SEXTA GERAÇÃO -->
@@ -384,51 +434,52 @@
                             <p>6ª Geração</p>
                             <div class="w-100"></div>
                             <div class="row gen6" id="gridEPK">
-                            <a class="gridpkm chespin grass grass form1">
-                                <input type="image" src="./images/pkmMini/chespin.png" id="pkmEscolha"
-                                    value="650Chespin" class="grass grass form1 small" onclick="pkm(this)"><br>
-                                Chespin
-                            </a>
-                            <a class="gridpkm quilladin grass grass form2">
-                                <input type="image" src="./images/pkmMini/quilladin.png" id="pkmEscolha"
-                                    value="651Quilladin" class="grass grass form2 medium" onclick="pkm(this)"><br>
-                                Quilladin
-                            </a>
-                            <a class="gridpkm chesnaught grass fighting fullform">
-                                <input type="image" src="./images/pkmMini/chesnaught.png" id="pkmEscolha"
-                                    value="652Chesnaught" class="grass fighting fullform big" onclick="pkm(this)"><br>
-                                Chesnaught
-                            </a>
-                            <a class="gridpkm fennekin fire fire form1">
-                                <input type="image" src="./images/pkmMini/fennekin.png" id="pkmEscolha"
-                                    value="653Fennekin" class="fire fire form1 small" onclick="pkm(this)"><br>
-                                Fennekin
-                            </a>
-                            <a class="gridpkm braixen fire fire form2">
-                                <input type="image" src="./images/pkmMini/braixen.png" id="pkmEscolha"
-                                    value="654Braixen" class="fire fire form2 medium" onclick="pkm(this)"><br>
-                                Braixen
-                            </a>
-                            <a class="gridpkm delphox fire psychic fullform">
-                                <input type="image" src="./images/pkmMini/delphox.png" id="pkmEscolha"
-                                    value="655Delphox" class="fire psychic fullform big" onclick="pkm(this)"><br>
-                                Delphox
-                            </a>
-                            <a class="gridpkm froakie water water form1">
-                                <input type="image" src="./images/pkmMini/froakie.png" id="pkmEscolha"
-                                    value="656Froakie" class="water water form1 small" onclick="pkm(this)"><br>
-                                Froakie
-                            </a>
-                            <a class="gridpkm frogadier water water form2">
-                                <input type="image" src="./images/pkmMini/frogadier.png" id="pkmEscolha"
-                                    value="657Frogadier" class="water water form2 medium" onclick="pkm(this)"><br>
-                                Frogadier
-                            </a>
-                            <a class="gridpkm greninja water dark fullform">
-                                <input type="image" src="./images/pkmMini/greninja.png" id="pkmEscolha"
-                                    value="658Greninja" class="water dark fullform big" onclick="pkm(this)"><br>
-                                Greninja
-                            </a>
+                                <a class="gridpkm chespin grass grass form1">
+                                    <input type="image" src="./images/pkmMini/chespin.png" id="pkmEscolha"
+                                        value="650Chespin" class="grass grass form1 small" onclick="pkm(this)"><br>
+                                    Chespin
+                                </a>
+                                <a class="gridpkm quilladin grass grass form2">
+                                    <input type="image" src="./images/pkmMini/quilladin.png" id="pkmEscolha"
+                                        value="651Quilladin" class="grass grass form2 medium" onclick="pkm(this)"><br>
+                                    Quilladin
+                                </a>
+                                <a class="gridpkm chesnaught grass fighting fullform">
+                                    <input type="image" src="./images/pkmMini/chesnaught.png" id="pkmEscolha"
+                                        value="652Chesnaught" class="grass fighting fullform big"
+                                        onclick="pkm(this)"><br>
+                                    Chesnaught
+                                </a>
+                                <a class="gridpkm fennekin fire fire form1">
+                                    <input type="image" src="./images/pkmMini/fennekin.png" id="pkmEscolha"
+                                        value="653Fennekin" class="fire fire form1 small" onclick="pkm(this)"><br>
+                                    Fennekin
+                                </a>
+                                <a class="gridpkm braixen fire fire form2">
+                                    <input type="image" src="./images/pkmMini/braixen.png" id="pkmEscolha"
+                                        value="654Braixen" class="fire fire form2 medium" onclick="pkm(this)"><br>
+                                    Braixen
+                                </a>
+                                <a class="gridpkm delphox fire psychic fullform">
+                                    <input type="image" src="./images/pkmMini/delphox.png" id="pkmEscolha"
+                                        value="655Delphox" class="fire psychic fullform big" onclick="pkm(this)"><br>
+                                    Delphox
+                                </a>
+                                <a class="gridpkm froakie water water form1">
+                                    <input type="image" src="./images/pkmMini/froakie.png" id="pkmEscolha"
+                                        value="656Froakie" class="water water form1 small" onclick="pkm(this)"><br>
+                                    Froakie
+                                </a>
+                                <a class="gridpkm frogadier water water form2">
+                                    <input type="image" src="./images/pkmMini/frogadier.png" id="pkmEscolha"
+                                        value="657Frogadier" class="water water form2 medium" onclick="pkm(this)"><br>
+                                    Frogadier
+                                </a>
+                                <a class="gridpkm greninja water dark fullform">
+                                    <input type="image" src="./images/pkmMini/greninja.png" id="pkmEscolha"
+                                        value="658Greninja" class="water dark fullform big" onclick="pkm(this)"><br>
+                                    Greninja
+                                </a>
                             </div>
 
                             <!-- SÉTIMA GERAÇÃO -->
@@ -437,54 +488,115 @@
                             <p>7ª Geração</p>
                             <div class="w-100"></div>
                             <div class="row gen7" id="gridEPK">
-                            <a class="gridpkm rowlet grass flying form1">
-                                <input type="image" src="./images/pkmMini/rowlet.png" id="pkmEscolha" value="722Rowlet"
-                                    class="grass flying form1 small" onclick="pkm(this)"><br>
-                                Rowlet
-                            </a>
-                            <a class="gridpkm dartrix grass flying form2">
-                                <input type="image" src="./images/pkmMini/dartrix.png" id="pkmEscolha"
-                                    value="723Dartrix" class="grass flying form2 medium" onclick="pkm(this)"><br>
-                                Dartrix
-                            </a>
-                            <a class="gridpkm decidueye grass ghost fullform">
-                                <input type="image" src="./images/pkmMini/decidueye.png" id="pkmEscolha"
-                                    value="724Decidueye" class="grass ghost fullform big" onclick="pkm(this)"><br>
-                                Decidueye
-                            </a>
-                            <a class="gridpkm litten fire fire form1">
-                                <input type="image" src="./images/pkmMini/litten.png" id="pkmEscolha" value="725Litten"
-                                    class="fire fire form1 small" onclick="pkm(this)"><br>
-                                Litten
-                            </a>
-                            <a class="gridpkm torracat fire fire form2">
-                                <input type="image" src="./images/pkmMini/torracat.png" id="pkmEscolha"
-                                    value="726Torracat" class="fire fire form2 medium" onclick="pkm(this)"><br>
-                                Torracat
-                            </a>
-                            <a class="gridpkm incineroar fire dark form1">
-                                <input type="image" src="./images/pkmMini/incineroar.png" id="pkmEscolha"
-                                    value="727Incineroar" class="fire dark form1 big" onclick="pkm(this)"><br>
-                                Incineroar
-                            </a>
-                            <a class="gridpkm popplio water water form1">
-                                <input type="image" src="./images/pkmMini/popplio.png" id="pkmEscolha"
-                                    value="728Popplio" class="water water form1 small" onclick="pkm(this)"><br>
-                                Popplio
-                            </a>
-                            <a class="gridpkm brionne water water form2">
-                                <input type="image" src="./images/pkmMini/brionne.png" id="pkmEscolha"
-                                    value="729Brionne" class="water water form2 medium" onclick="pkm(this)"><br>
-                                Brionne
-                            </a>
-                            <a class="gridpkm primarina water fairy fullform">
-                                <input type="image" src="./images/pkmMini/primarina.png" id="pkmEscolha"
-                                    value="730Primarina" class="water fairy fullform abig" onclick="pkm(this)"><br>
-                                Primarina
-                            </a>
+                                <a class="gridpkm rowlet grass flying form1">
+                                    <input type="image" src="./images/pkmMini/rowlet.png" id="pkmEscolha"
+                                        value="722Rowlet" class="grass flying form1 small" onclick="pkm(this)"><br>
+                                    Rowlet
+                                </a>
+                                <a class="gridpkm dartrix grass flying form2">
+                                    <input type="image" src="./images/pkmMini/dartrix.png" id="pkmEscolha"
+                                        value="723Dartrix" class="grass flying form2 medium" onclick="pkm(this)"><br>
+                                    Dartrix
+                                </a>
+                                <a class="gridpkm decidueye grass ghost fullform">
+                                    <input type="image" src="./images/pkmMini/decidueye.png" id="pkmEscolha"
+                                        value="724Decidueye" class="grass ghost fullform big" onclick="pkm(this)"><br>
+                                    Decidueye
+                                </a>
+                                <a class="gridpkm litten fire fire form1">
+                                    <input type="image" src="./images/pkmMini/litten.png" id="pkmEscolha"
+                                        value="725Litten" class="fire fire form1 small" onclick="pkm(this)"><br>
+                                    Litten
+                                </a>
+                                <a class="gridpkm torracat fire fire form2">
+                                    <input type="image" src="./images/pkmMini/torracat.png" id="pkmEscolha"
+                                        value="726Torracat" class="fire fire form2 medium" onclick="pkm(this)"><br>
+                                    Torracat
+                                </a>
+                                <a class="gridpkm incineroar fire dark form1">
+                                    <input type="image" src="./images/pkmMini/incineroar.png" id="pkmEscolha"
+                                        value="727Incineroar" class="fire dark form1 big" onclick="pkm(this)"><br>
+                                    Incineroar
+                                </a>
+                                <a class="gridpkm popplio water water form1">
+                                    <input type="image" src="./images/pkmMini/popplio.png" id="pkmEscolha"
+                                        value="728Popplio" class="water water form1 small" onclick="pkm(this)"><br>
+                                    Popplio
+                                </a>
+                                <a class="gridpkm brionne water water form2">
+                                    <input type="image" src="./images/pkmMini/brionne.png" id="pkmEscolha"
+                                        value="729Brionne" class="water water form2 medium" onclick="pkm(this)"><br>
+                                    Brionne
+                                </a>
+                                <a class="gridpkm primarina water fairy fullform">
+                                    <input type="image" src="./images/pkmMini/primarina.png" id="pkmEscolha"
+                                        value="730Primarina" class="water fairy fullform abig" onclick="pkm(this)"><br>
+                                    Primarina
+                                </a>
+                                <a class="gridpkm rockruff rock rock form1">
+                                    <input type="image" src="./images/pkmMini/rockruff.png" id="pkmEscolha"
+                                        value="744Rockruff" class="rock rock form1 small" onclick="pkm(this)"><br>
+                                    Rockruff
+                                </a>
+                                <a class="gridpkm lycanroc rock rock form1">
+                                    <input type="image" src="./images/pkmMini/lycanroc.png" id="pkmEscolha"
+                                        value="745Lycanroc" class="rock rock form1 abig" onclick="pkm(this)"><br>
+                                    Lycanroc
+                                </a>
                             </div>
 
-                            <!-- VEM NI MIM OITAVA GERAÇÃO -->
+                            <!-- OITAVA GERAÇÃO -->
+
+                            <div class="w-100"></div>
+                            <p>8ª Geração</p>
+                            <div class="w-100"></div>
+                            <div class="row gen7" id="gridEPK">
+                                <a class="gridpkm grookey grass grass form1">
+                                    <input type="image" src="./images/pkmMini/grookey.png" id="pkmEscolha"
+                                        value="810Grookey" class="grass grass form1 small" onclick="pkm(this)"><br>
+                                    Grookey
+                                </a>
+                                <a class="gridpkm thwackey grass grass form2">
+                                    <input type="image" src="./images/pkmMini/thwackey.png" id="pkmEscolha"
+                                        value="811Thwackey" class="grass grass form2 medium" onclick="pkm(this)"><br>
+                                    Thwackey
+                                </a>
+                                <a class="gridpkm rillaboom grass grass fullform">
+                                    <input type="image" src="./images/pkmMini/rillaboom.png" id="pkmEscolha"
+                                        value="812Rillaboom" class="grass grass fullform abig" onclick="pkm(this)"><br>
+                                    Rillaboom
+                                </a>
+                                <a class="gridpkm scorbunny fire fire form1">
+                                    <input type="image" src="./images/pkmMini/scorbunny.png" id="pkmEscolha"
+                                        value="813Scorbunny" class="fire fire form1 medium" onclick="pkm(this)"><br>
+                                    Scorbunny
+                                </a>
+                                <a class="gridpkm raboot fire fire form2">
+                                    <input type="image" src="./images/pkmMini/raboot.png" id="pkmEscolha"
+                                        value="814Raboot" class="fire fire form2 medium" onclick="pkm(this)"><br>
+                                    Raboot
+                                </a>
+                                <a class="gridpkm cinderace fire fire form1">
+                                    <input type="image" src="./images/pkmMini/cinderace.png" id="pkmEscolha"
+                                        value="815Cinderace" class="fire fire form1 big" onclick="pkm(this)"><br>
+                                    Cinderace
+                                </a>
+                                <a class="gridpkm sobble water water form1">
+                                    <input type="image" src="./images/pkmMini/sobble.png" id="pkmEscolha"
+                                        value="816Sobble" class="water water form1 small" onclick="pkm(this)"><br>
+                                    Sobble
+                                </a>
+                                <a class="gridpkm drizzile water water form2">
+                                    <input type="image" src="./images/pkmMini/drizzile.png" id="pkmEscolha"
+                                        value="817Drizzile" class="water water form2 medium" onclick="pkm(this)"><br>
+                                    Drizzile
+                                </a>
+                                <a class="gridpkm inteleon water water fullform">
+                                    <input type="image" src="./images/pkmMini/inteleon.png" id="pkmEscolha"
+                                        value="818Inteleon" class="water water fullform abig" onclick="pkm(this)"><br>
+                                    Inteleon
+                                </a>
+                            </div>
 
                         </div>
 
