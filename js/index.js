@@ -72,9 +72,10 @@ function remove(r1) {
 
 // Adiciona os treinadores
 
-function tre() {
+function tre(Trainer) {
   let treinador = document.getElementById("treinador")
-  let treE = document.querySelector("#treEscolha").value
+  // let treE = document.querySelector("#treEscolha").value
+  let treE = Trainer.title
 
   return treinador.innerHTML = `<img src="./images/trainers/${treE}.png" height="550"; width="auto";>`
 }
