@@ -3,7 +3,7 @@
 let gen1 = document.querySelector(".gen1").innerHTML; let gen2 = document.querySelector(".gen2").innerHTML
 let gen3 = document.querySelector(".gen3").innerHTML; let gen4 = document.querySelector(".gen4").innerHTML
 let gen5 = document.querySelector(".gen5").innerHTML; let gen6 = document.querySelector(".gen6").innerHTML
-let gen7 = document.querySelector(".gen7").innerHTML; 
+let gen7 = document.querySelector(".gen7").innerHTML;
 
 // Treinador aleatório sempre que a página recarregar
 
@@ -21,7 +21,7 @@ treinadorAleatorio[18] = "./images/trainers/ElioU.png"; treinadorAleatorio[19] =
 treinadorAleatorio[20] = "./images/trainers/Victor.png"; treinadorAleatorio[21] = "./images/trainers/Gloria.png";
 
 function randOrd() {
-  return (Math.round(Math.random())-0.5);
+  return (Math.round(Math.random()) - 0.5);
 }
 treinadorAleatorio.sort(randOrd)
 var imgnum = randOrd()
@@ -77,70 +77,77 @@ function tre(Trainer) {
   // let treE = document.querySelector("#treEscolha").value
   let treE = Trainer.title
 
+  if (document.querySelector("#miniOn")) {
+    let treOn = document.querySelector("#miniOn")
+    treOn.id = "miniOff"
+  }
+
+  Trainer.id = "miniOn"
+
   return treinador.innerHTML = `<img src="./images/trainers/${treE}.png" height="550"; width="auto";>`
 }
 
-// Faz o filro de pokémon por geração
+// Faz o filro de pokémon por geração, ou faria se funcionasse
 
-function filtro(filtro, gen1, gen2, gen3, gen4, gen5, gen6, gen7) {
-  let cbID = filtro.value
+// function filtro(filtro, gen1, gen2, gen3, gen4, gen5, gen6, gen7) {
+//   let cbID = filtro.value
 
-  switch (cbID) {
-    case "gen1":
-      if (filtro.checked == false) {
-        document.querySelector(".gen1").innerHTML = "-"
-      } else {
-        document.querySelector(".gen1").innerHTML = gen1
-      }
-      break
-    case "gen2":
-      if (filtro.checked == false) {
-        document.querySelector(".gen2").innerHTML = "-"
-      } else {
-        document.querySelector(".gen2").innerHTML = gen2
-      }
-      break
-    case "gen3":
-      if (filtro.checked == false) {
-        document.querySelector(".gen3").innerHTML = "-"
-      } else {
-        document.querySelector(".gen3").innerHTML = gen3
-      }
-      break
-    case "gen4":
-      if (filtro.checked == false) {
-        document.querySelector(".gen4").innerHTML = "-"
-      } else {
-        document.querySelector(".gen4").innerHTML = gen4
-      }
-      break
-    case "gen5":
-      if (filtro.checked == false) {
-        document.querySelector(".gen5").innerHTML = "-"
-      } else {
-        document.querySelector(".gen5").innerHTML = gen5
-      }
-      break
-    case "gen6":
-      if (filtro.checked == false) {
-        document.querySelector(".gen6").innerHTML = "-"
-      } else {
-        document.querySelector(".gen6").innerHTML = gen6
-      }
-      break
-    case "gen7":
-      if (filtro.checked == false) {
-        document.querySelector(".gen7").innerHTML = "-"
-      } else {
-        document.querySelector(".gen7").innerHTML = gen7
-      }
-      break
-  }
+//   switch (cbID) {
+//     case "gen1":
+//       if (filtro.checked == false) {
+//         document.querySelector(".gen1").innerHTML = "-"
+//       } else {
+//         document.querySelector(".gen1").innerHTML = gen1
+//       }
+//       break
+//     case "gen2":
+//       if (filtro.checked == false) {
+//         document.querySelector(".gen2").innerHTML = "-"
+//       } else {
+//         document.querySelector(".gen2").innerHTML = gen2
+//       }
+//       break
+//     case "gen3":
+//       if (filtro.checked == false) {
+//         document.querySelector(".gen3").innerHTML = "-"
+//       } else {
+//         document.querySelector(".gen3").innerHTML = gen3
+//       }
+//       break
+//     case "gen4":
+//       if (filtro.checked == false) {
+//         document.querySelector(".gen4").innerHTML = "-"
+//       } else {
+//         document.querySelector(".gen4").innerHTML = gen4
+//       }
+//       break
+//     case "gen5":
+//       if (filtro.checked == false) {
+//         document.querySelector(".gen5").innerHTML = "-"
+//       } else {
+//         document.querySelector(".gen5").innerHTML = gen5
+//       }
+//       break
+//     case "gen6":
+//       if (filtro.checked == false) {
+//         document.querySelector(".gen6").innerHTML = "-"
+//       } else {
+//         document.querySelector(".gen6").innerHTML = gen6
+//       }
+//       break
+//     case "gen7":
+//       if (filtro.checked == false) {
+//         document.querySelector(".gen7").innerHTML = "-"
+//       } else {
+//         document.querySelector(".gen7").innerHTML = gen7
+//       }
+//       break
+//   }
 
-  return false
-}
+//   return false
+// }
 
-// Termina o processo e teoricamente gera uma imagem, teoricamente.
+// Termina o processo e teoricamente gera uma imagem... teoricamente.
 
 function pronto() {
   sumiu = document.getElementsByClassName("s3")[0]
@@ -153,4 +160,4 @@ function pronto() {
   // html2canvas(document.querySelector("#sTop")).then(canvas => {
   //   document.body.appendChild(canvas)
   // });
-  }
+}

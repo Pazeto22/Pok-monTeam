@@ -5,10 +5,7 @@
     <title>Pokémon Team</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/bootstrap-select.min.css">
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="./js/html2canvas.js"></script>
-    <!-- <script src="./js/html2canvas.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="./css/bootstrap-select.min.css"> -->
 </head>
 
 <body>
@@ -44,6 +41,7 @@
     </section>
 
     <section class="s3">
+        <label>Para remover um pokémon do time basta clicar nele</label>
         <section id="sTop" class="s1">
             <section id="sTop" class="left">
                 <div class="container">
@@ -52,57 +50,57 @@
                         <p>Escolha seu Treinador:</p>
                         <div class="w-100"></div>
 
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Red.jpg"
+                        <label><input type="image" id="miniOff" class="miniTrainer" src="./images/trainersMini/Red.jpg"
                                 onclick="tre(this)" title="Red"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Leaf.jpg"
+                        <label><input type="image" id="miniOff" class="miniTrainer" src="./images/trainersMini/Leaf.jpg"
                                 onclick="tre(this)" title="Leaf"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Ethan.jpg"
-                                onclick="tre(this)" title="Ethan"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Lyra.jpg"
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/Ethan.jpg" onclick="tre(this)" title="Ethan"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer" src="./images/trainersMini/Lyra.jpg"
                                 onclick="tre(this)" title="Lyra"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Brendan.jpg"
-                                onclick="tre(this)" title="Brendan"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/May.jpg"
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/Brendan.jpg" onclick="tre(this)" title="Brendan"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer" src="./images/trainersMini/May.jpg"
                                 onclick="tre(this)" title="May"></label>
                         <br>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Lucas.jpg"
-                                onclick="tre(this)" title="Lucas"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/LucasP.jpg"
-                                onclick="tre(this)" title="LucasP"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Dawn.jpg"
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/Lucas.jpg" onclick="tre(this)" title="Lucas"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/LucasP.jpg" onclick="tre(this)" title="LucasP"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer" src="./images/trainersMini/Dawn.jpg"
                                 onclick="tre(this)" title="Dawn"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/DawnP.jpg"
-                                onclick="tre(this)" title="DawnP"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Hilbert.jpg"
-                                onclick="tre(this)" title="Hilbert"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Hilda.jpg"
-                                onclick="tre(this)" title="Hilda"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/DawnP.jpg" onclick="tre(this)" title="DawnP"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/Hilbert.jpg" onclick="tre(this)" title="Hilbert"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/Hilda.jpg" onclick="tre(this)" title="Hilda"></label>
                         <br>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Nate.jpg"
+                        <label><input type="image" id="miniOff" class="miniTrainer" src="./images/trainersMini/Nate.jpg"
                                 onclick="tre(this)" title="Nate"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Rosa.jpg"
+                        <label><input type="image" id="miniOff" class="miniTrainer" src="./images/trainersMini/Rosa.jpg"
                                 onclick="tre(this)" title="Rosa"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Calem.jpg"
-                                onclick="tre(this)" title="Calem"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Serena.jpg"
-                                onclick="tre(this)" title="Serena"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Elio.jpg"
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/Calem.jpg" onclick="tre(this)" title="Calem"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/Serena.jpg" onclick="tre(this)" title="Serena"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer" src="./images/trainersMini/Elio.jpg"
                                 onclick="tre(this)" title="Elio"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/ElioU.jpg"
-                                onclick="tre(this)" title="ElioU"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/ElioU.jpg" onclick="tre(this)" title="ElioU"></label>
                         <br>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Selene.jpg"
-                                onclick="tre(this)" title="Selene"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/SeleneU.jpg"
-                                onclick="tre(this)" title="SeleneU"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Victor.jpg"
-                                onclick="tre(this)" title="Victor"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/VictorG.jpg"
-                                onclick="tre(this)" title="VictorG"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/Gloria.jpg"
-                                onclick="tre(this)" title="Gloria"></label>
-                        <label><input type="image" class="miniTrainer" src="./images/trainersMini/GloriaG.jpg"
-                                onclick="tre(this)" title="GloriaG"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/Selene.jpg" onclick="tre(this)" title="Selene"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/SeleneU.jpg" onclick="tre(this)" title="SeleneU"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/Victor.jpg" onclick="tre(this)" title="Victor"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/VictorG.jpg" onclick="tre(this)" title="VictorG"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/Gloria.jpg" onclick="tre(this)" title="Gloria"></label>
+                        <label><input type="image" id="miniOff" class="miniTrainer"
+                                src="./images/trainersMini/GloriaG.jpg" onclick="tre(this)" title="GloriaG"></label>
 
                         <!-- <select name="" class="selectpicker" id="treEscolha" data-live-search="true" onchange="tre()">
                             <option selected disabled>...</option>
@@ -139,9 +137,10 @@
                             <option value="Gloria" id="8gen">Gloria</option>
                             <option value="GloriaG" id="8gen">Gloria Ginásio</option>
                         </select><br><br> -->
+
                     </div>
                     <main class="GridEscolha">
-                        <div class="filtragem">
+                        <!-- <div class="filtragem">
                             Filtre os Pokémon que você deseja escolher<br><br>
                             <label><input type="checkbox" id="filtroPkm" checked
                                     onclick="filtro(this, gen1, gen2, gen3, gen4, gen5, gen6, gen7, gen8)" value="gen1">
@@ -176,7 +175,7 @@
                                 8ª
                                 Geração</label>
                             <br><br>
-                        </div>
+                        </div> -->
                         <div class="row" id="EscolhaPk">
 
                             <!-- PRIMEIRA GERAÇÃO -->
@@ -663,10 +662,12 @@
     </section>
 
     <script src="js/index.js"></script>
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+    <!-- <script src="js/jquery-3.3.1.slim.min.js"></script> -->
+    <!-- <script src="js/popper.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
+    <!-- <script src="js/bootstrap-select.min.js"></script> -->
+
 </body>
 
 </html>

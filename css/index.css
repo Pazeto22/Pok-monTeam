@@ -93,9 +93,6 @@ div#PkTr{
 
 img#pok{
     cursor: pointer;
-    cursor: url("../images/site/cursorRemove.png"), pointer, auto;
-    /* min-width:100%;
-    min-height:100%; */
 }
 
 img.small{
@@ -162,4 +159,19 @@ div#gridEPK{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#miniOff{
+    filter: grayscale(100%);
+    transition-duration: 500ms;
+}
+
+#miniOff:hover{
+    filter: grayscale(0%);
+    transition-duration: 500ms;
+}
+
+#miniOn{
+    filter: grayscale(0%);
+    transition-duration: 500ms;
 }
