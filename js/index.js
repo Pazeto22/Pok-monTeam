@@ -8,24 +8,27 @@ let gen7 = document.querySelector(".gen7").innerHTML;
 // Treinador aleatório sempre que a página recarregar
 
 let treinadorAleatorio = [];
-treinadorAleatorio[0] = "./images/trainers/Red.png"; treinadorAleatorio[1] = "./images/trainers/Leaf.png";
-treinadorAleatorio[2] = "./images/trainers/Ethan.png"; treinadorAleatorio[3] = "./images/trainers/Lyra.png";
-treinadorAleatorio[4] = "./images/trainers/Brendan.png"; treinadorAleatorio[5] = "./images/trainers/May.png";
-treinadorAleatorio[6] = "./images/trainers/Lucas.png"; treinadorAleatorio[7] = "./images/trainers/Dawn.png";
-treinadorAleatorio[8] = "./images/trainers/LucasP.png"; treinadorAleatorio[9] = "./images/trainers/DawnP.png";
-treinadorAleatorio[10] = "./images/trainers/Hilbert.png"; treinadorAleatorio[11] = "./images/trainers/Hilda.png";
-treinadorAleatorio[12] = "./images/trainers/Nate.png"; treinadorAleatorio[13] = "./images/trainers/Rosa.png";
-treinadorAleatorio[14] = "./images/trainers/Calem.png"; treinadorAleatorio[15] = "./images/trainers/Serena.png";
-treinadorAleatorio[16] = "./images/trainers/Elio.png"; treinadorAleatorio[17] = "./images/trainers/Selene.png";
-treinadorAleatorio[18] = "./images/trainers/ElioU.png"; treinadorAleatorio[19] = "./images/trainers/SeleneU.png";
-treinadorAleatorio[20] = "./images/trainers/Victor.png"; treinadorAleatorio[21] = "./images/trainers/Gloria.png";
+treinadorAleatorio[0] = "Red"; treinadorAleatorio[1] = "Leaf";
+treinadorAleatorio[2] = "Ethan"; treinadorAleatorio[3] = "Lyra";
+treinadorAleatorio[4] = "Brendan"; treinadorAleatorio[5] = "May";
+treinadorAleatorio[6] = "Lucas"; treinadorAleatorio[7] = "Dawn";
+treinadorAleatorio[8] = "LucasP"; treinadorAleatorio[9] = "DawnP";
+treinadorAleatorio[10] = "Hilbert"; treinadorAleatorio[11] = "Hilda";
+treinadorAleatorio[12] = "Nate"; treinadorAleatorio[13] = "Rosa";
+treinadorAleatorio[14] = "Calem"; treinadorAleatorio[15] = "Serena";
+treinadorAleatorio[16] = "Elio"; treinadorAleatorio[17] = "Selene";
+treinadorAleatorio[18] = "ElioU"; treinadorAleatorio[19] = "SeleneU";
+treinadorAleatorio[20] = "Victor"; treinadorAleatorio[21] = "Gloria";
+treinadorAleatorio[21] = "VictorG"; treinadorAleatorio[22] = "GloriaG";
 
 function randOrd() {
   return (Math.round(Math.random()) - 0.5);
 }
+
 treinadorAleatorio.sort(randOrd)
-var imgnum = randOrd()
-document.getElementById("treinador").innerHTML = `<img src="${treinadorAleatorio[0]}" height="550" width="auto">`
+// var imgnum = randOrd()
+document.getElementById("treinador").innerHTML = `<img src="./images/trainers/${treinadorAleatorio[0]}.png" height="550" width="auto">`
+document.querySelector(`[title=${treinadorAleatorio[0]}]`).id = "miniOn"
 
 // Adiciona os Pokémon
 
@@ -77,10 +80,12 @@ function tre(Trainer) {
   // let treE = document.querySelector("#treEscolha").value
   let treE = Trainer.title
 
-  if (document.querySelector("#miniOn")) {
-    let treOn = document.querySelector("#miniOn")
-    treOn.id = "miniOff"
-  }
+  // if (document.querySelector("#miniOn")) {
+  //   let treOn = document.querySelector("#miniOn")
+  //   treOn.id = "miniOff"
+  // }
+
+  document.querySelector("#miniOn").id = "miniOff"
 
   Trainer.id = "miniOn"
 
